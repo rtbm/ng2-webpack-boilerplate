@@ -25,7 +25,7 @@ export class RtbmMyApp {
 
     ngRedux.mapDispatchToTarget((dispatch) => {
       return {
-        foo: (credentials) => dispatch({
+        foo: () => dispatch({
           type: 'App/FOO',
           payload: 'FOO'
         })
